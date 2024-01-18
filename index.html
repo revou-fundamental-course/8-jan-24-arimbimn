@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="text-transform: uppercase;">KATIK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1 style="text-transform: uppercase;">Welcome to Katik</h1>
+        <h3 style="color: gray;">Kalkulator Matematik</h3>
+        <p style="font-size: smaller;">Website sederhana untuk menghitung luas & keliling Persegi</p>
+        <hr>
+        <br>
+        <form id="calculator-form">
+            <label for="sideLength">Panjang Sisi:</label>
+            <input type="number" placeholder="masukkan panjang sisi disini..." id="sideLength" name="sideLength" required>
+            <button type="button" onclick="hitungLuasKeliling()">Hitung</button>
+            <button type="button" class="reset-button" onclick="resetForm()">Reset</button>
+        </form>
+        <div id="result-container" style="display:none;">
+            <p id="luasResult">Luas: </p>
+            <p id="kelilingResult">Keliling: </p>
+            <div id="explanation-container">
+                <h3>Penjelasan Perhitungan:</h3>
+                <ul id="calculationExplanation"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
